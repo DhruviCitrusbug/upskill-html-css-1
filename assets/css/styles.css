@@ -1,0 +1,417 @@
+html {
+    margin: 0;
+    font-size: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 96px;
+    height: 126px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+}
+
+.navbar-logo img {
+    height: 5.3rem;
+    width: 4.45rem;
+}
+
+.navbar-logo h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #0D0D21;
+    margin-top: 2.2rem;
+}
+
+.navbar button {
+    height: 6.1rem;
+    width: 14.8rem;
+    background-color: #fff;
+    color: #173B58;
+    border: solid 0.1rem #173B58;
+    border-radius: 5.6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    box-shadow: 0px 0px 12px #173B584D;
+}
+
+.hero-page-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    height: 800px;
+}
+
+.hero-page-left-container {
+    position: relative;
+    color: #173B58;
+    padding: 137px 0px 137px 96px;
+    width: 720px;
+}
+
+.hero-page-left-container h1 {
+    position: relative;
+    max-width: 400px;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero-page-left-container h1 img {
+    position: absolute;
+    left: 4px;
+    top: 50px;
+}
+
+.hero-page-left-container h3 {
+    font-size: 2.6rem;
+    font-weight: 550;
+    width: 800px;
+}
+
+.email-input-block {
+    position: relative;
+    margin: 50px 0px 40px 0px;
+    height: 62px;
+    width: 542px;
+}
+
+.email-input-block input {
+    color: #173B58;
+    height: inherit;
+    width: inherit;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 2.6rem;
+    border: 1px solid #173B58;
+    border-radius: 100px;
+}
+
+.email-input-block input::placeholder {
+    color: #173B58;
+    opacity: 30%;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.email-input-block input:focus {
+    border: 1px solid #EDB031;
+}
+
+
+.email-input-block button {
+    z-index: 1;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #173B58;
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    height: 62px;
+    width: 229px;
+    background-color: #EDB031;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.email-input-block button img {
+    height: 32px;
+    width: 32px;
+}
+
+.hero-page-left-container p {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 46px;
+}
+
+.sign-in-opt-btn {
+    display: flex;
+    gap: 12px;
+}
+
+.sign-in-opt-btn button{
+    height: 62px;
+    width: 148px;
+    border-radius: 100px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF2F7;
+}
+
+.sign-in-logo-one {
+    height: 60%;
+    width: 60%;
+}
+
+.sign-in-logo-two {
+    height: 72%;
+    width: 72%;
+}
+
+.hero-page-right-container {
+    width: 720px;
+    max-width: 900px;
+    max-height: 684px;
+}
+
+.hero-page-right-content {
+    position: relative;
+    top: -100px;
+    left: -80px;
+}
+
+.float-card-one {
+    position: absolute;
+    text-align: center;
+    border: 1px solid #C3C4C6;
+    border-radius: 16px;
+    background-color: #fff;
+    height: 11.2rem;
+    width: 23.4rem;
+    top: 510px;
+    left: 450px;
+    z-index: 1;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    letter-spacing: 1.2px;
+}
+
+.float-card-one img {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.float-card-one h1 {
+    color: #173B58;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.float-card-one h2 {
+    color: #1E1E1E;
+    font-weight: 400;
+    font-size: 1.85rem;
+    opacity: 80%;
+}
+
+.float-card-two {
+    position: absolute;
+    text-align: left;
+    color: #1E1E1E;
+    border: 1px solid #C3C4C6;
+    border-radius: 16px;
+    background-color: #fff;
+    top: 610px;
+    left: -60px;
+    z-index: 1;
+    padding: 28px 28px;
+    width: 382px;
+    height: 164px;
+}
+
+.float-card-two h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    opacity: 90%;
+}
+
+.person-detail {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 18px;
+}
+
+.person-detail h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    padding: 4px 0px;
+}
+
+.person-detail h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.23px;
+    opacity: 70%;
+    letter-spacing: 0.03em;   
+}
+
+.star-vector {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.glimpse-container {
+    max-width: 1440px;
+    margin: auto;
+    height: 978px;
+    background-color: #F6F8FB;
+    padding: 114px 122px;
+}
+
+.glimpse-header {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #173B58;
+    margin-bottom: 60px;
+}
+
+.glimpse-grid {
+    display: flex;
+    height: 400px;
+    gap: 30px;
+}
+
+.glimpse-left-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 288px;
+    height: inherit;
+    padding: 14px 20px;
+    color: #183C59;
+    box-shadow: 0px 100px 80px 0px #00000022;
+}
+
+.english-learning-img {
+    height: 200px;
+    width: 250px;
+}
+
+.glimpse-left-card h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 14px 0px;
+}
+
+.glimpse-left-card h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.icon-text-pair {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.icon-text-pair.padding {
+    padding: 3px 0px;
+}
+
+.icon-text-pair.padding.right {
+    padding: 3px 40px;
+}
+
+.glimpse-left-card hr {
+    color: #D9DBE9;
+    margin-top: 12px;
+}
+
+.glimpse-person-detail {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.glimpse-person-image {
+    border-radius: 20px;
+}
+
+.glimpse-person-detail h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 140px;
+}
+
+.glimpse-person-detail h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 140px;
+}
+
+.glimpse-person-detail button {
+    height: 30px;
+    width: 30px;
+    background-color: #EDF2F7;
+    border: none;
+    border-radius: 100px;
+}
+
+.glimpse-right-card {
+    position: relative;
+}
+
+.glimpse-right-card img {
+    border-radius: 20px;
+}
+
+.glimpse-right-card .play-btn {
+    position: absolute;
+    height: 9.2rem;
+    width: 9.2rem;
+    top: 15.4rem;
+    left: 39.2rem;
+    background-color: #173B58;
+    border-radius: 100px;
+    border: none;
+    z-index: 1;
+}
+
+.glimpse-footer {
+    margin: 30px 0px;
+    background-color: #183C59;
+    color: #fff;
+    border-radius: 20px;
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.glimpse-footer h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+}
+
+.glimpse-footer h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.02rem; 
+}
