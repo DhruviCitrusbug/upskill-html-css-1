@@ -13,7 +13,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 33px 96px;
-    height: 126px;
+    height: auto;
     max-width: 1440px;
     margin: auto;
 }
@@ -24,10 +24,10 @@ html {
     gap: 0rem;
 }
 
-.navbar-logo img {
+/* .navbar-logo img {
     height: 5.3rem;
     width: 4.45rem;
-}
+} */
 
 .navbar-logo h1 {
     font-size: 2.25rem;
@@ -55,7 +55,8 @@ html {
     justify-content: space-between;
     max-width: 1440px;
     margin: auto;
-    height: 800px;
+    min-height: 800px;
+    overflow: hidden;
 }
 
 .hero-page-left-container {
@@ -191,8 +192,8 @@ html {
     border: 1px solid #C3C4C6;
     border-radius: 16px;
     background-color: #fff;
-    height: 11.2rem;
-    width: 23.4rem;
+    height: 112px;
+    width: 234px;
     top: 510px;
     left: 450px;
     z-index: 1;
@@ -276,7 +277,7 @@ html {
 .glimpse-container {
     max-width: 1440px;
     margin: auto;
-    height: 978px;
+    height: auto;
     background-color: #F6F8FB;
     padding: 114px 122px;
 }
@@ -292,24 +293,19 @@ html {
 
 .glimpse-grid {
     display: flex;
-    height: 400px;
     gap: 30px;
+    width: 100%;
 }
 
 .glimpse-left-card {
     background-color: #fff;
     border-radius: 10px;
     width: 288px;
-    height: inherit;
     padding: 14px 20px;
     color: #183C59;
     box-shadow: 0px 100px 80px 0px #00000022;
 }
 
-.english-learning-img {
-    height: 200px;
-    width: 250px;
-}
 
 .glimpse-left-card h1 {
     font-size: 1.8rem;
@@ -337,14 +333,16 @@ html {
 }
 
 .glimpse-left-card hr {
-    color: #D9DBE9;
+    background-color: #D9DBE9;
     margin-top: 12px;
+    height: 1px;
+    border: 0;
 }
 
 .glimpse-person-detail {
     display: flex;
     align-items: center;
-    padding: 10px 0px;
+    padding: 14px 0px 0px 0px;
     gap: 10px;
 }
 
@@ -374,18 +372,20 @@ html {
 
 .glimpse-right-card {
     position: relative;
-}
-
-.glimpse-right-card img {
+    background-image: url("../images/unsplash_Ju9DbmVFcAo.jpg");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
+    width: 100%;
 }
 
 .glimpse-right-card .play-btn {
     position: absolute;
     height: 9.2rem;
     width: 9.2rem;
-    top: 15.4rem;
-    left: 39.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #173B58;
     border-radius: 100px;
     border: none;
@@ -414,4 +414,178 @@ html {
     font-weight: 400;
     line-height: 2.2rem;
     letter-spacing: 0.02rem; 
+}
+
+.about-section {
+    max-width: 1440px;
+    margin: auto;
+    padding: 100px;
+}
+
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.about-heading h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0.04rem;  
+    text-align: center;
+    color: #173B58;
+    letter-spacing: 0.3rem;
+    margin: 0px 308px;
+}
+
+.about-heading span {
+    margin: auto;
+}
+
+.about-content {
+    color: #173B58;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    padding: 3rem 2rem;
+}
+
+.about-content a {
+    color: #173B58;
+}
+
+.read-more {
+    font-weight: 600;
+}
+
+.about-team {
+    width: 100%;
+    color: #173B58;
+}
+
+.about-team-member {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0px;
+    background: linear-gradient(96.05deg, #96D1E320 45.21%, #D8E4D620 96.81%);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.about-team-member-content hr {
+    margin: 10px 0px;
+    background-color: #CCD6DA;
+    height: 1px;
+    border: 0;
+}
+
+.about-team-member-image {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-team-member-image span {
+    position: relative;
+    left: 90%;
+}
+
+.team-member-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.team-member-detail h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.646rem;
+}
+
+.team-member-detail h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.083rem;
+}
+
+.team-member-detail-right {
+    display: flex;
+    gap: 20px;
+}
+
+.team-member-detail-right button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.linkedin-btn {
+    background-color: #006699;
+}
+
+.email-btn {
+    background-color: #173B58;
+}
+
+.team-member-loc {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.team-member-loc h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.083rem;
+}
+
+.team-member-bio {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    padding: 10px 0px;
+}
+
+.articles-section {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.articles-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #173B58;
+}
+
+.articles-section span {
+    margin: auto;
+}
+
+.articles-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0.04rem;
+}
+
+@media (max-width: 845px) {
+    .glimpse-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .glimpse-right-card {
+        height: 200px;
+        width: 100%;
+    }
+
+    .about-heading h1 {
+        margin: 0px;
+    }
+
 }
