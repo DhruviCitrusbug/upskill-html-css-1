@@ -60,7 +60,6 @@ button {
     max-width: 1440px;
     margin: auto;
     min-height: 800px;
-    overflow: hidden;
 }
 
 .hero-page-left-container {
@@ -371,7 +370,7 @@ button {
     width: 30px;
     background-color: #EDF2F7;
     border: none;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .glimpse-right-card {
@@ -557,7 +556,7 @@ button {
 .article-section {
     max-width: 1440px;
     margin: auto;
-    padding: 60px 100px 80px 100px;
+    padding: 60px 40px 80px 40px;
 }
 
 .article-heading {
@@ -576,6 +575,7 @@ button {
     font-weight: 700;
     line-height: 4.8rem;
     letter-spacing: 0.04rem;
+    text-align: center;
 }
 
 .article-grid {
@@ -591,7 +591,7 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-
+    margin: 20px 0px;
 }
 
 .article-image {
@@ -628,6 +628,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    max-width: 55%;
 }
 
 .product-left-content h3 {
@@ -645,7 +646,16 @@ button {
 }
 
 .product-right-content {
-    max-width: 100%;;
+    max-width: 45%;
+    width: 100%;
+    position: relative;
+    background-image: url("../images/product.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-image {
+    position: relative;
 }
 
 .product-left-content button {
@@ -653,13 +663,245 @@ button {
 }
 
 .product-heading {
+    display: flex;
+    flex-direction: column;
     padding: 50px 0px 0px 0px;
 }
 
+.slider-dots {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    border: 1px solid #173B58;
+}
+
+.dot.active {
+    background-color: #fff;
+    border: none;
+}
+
+.school-section {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    padding: 150px 40px;
+    gap: 60px;
+    align-items: center;
+}
+
+.school-left-content {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #173B58;
+    padding: 2px 60px 2px 80px;
+}
+
+.school-left-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0.2rem;
+}
+
+.school-left-content p {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    letter-spacing: 0.1rem;    
+}
+
+.school-left-content button {
+    width: 36rem;
+}
+
+.school-right-content {
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.school-image-bg {
+    background-color: #EDF2F7;
+    border-radius: 50%;
+    width: 489px;
+    height: 489px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uos-section {
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 78px 80px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: #F6F8FB;
+}
+
+.uos-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    color: #173B58;
+}
+
+.uos-header-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0.4rem;
+}
+
+.uos-header-content span {
+    padding-top: 10px;
+}
+
+.uos-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uos-arrows {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 62px;
+    height: 62px;
+    background-color: #EDF2F7;
+    border-radius: 100px;
+    border: none;
+}
+
+.uos-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.uos-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: auto;
+    padding: 14px 18px;
+    color: #183C59;
+    box-shadow: 0px 5px 6px 0px #080F340F;
+}
+
+
+.uos-card h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 14px 0px;
+}
+
+.uos-card h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.uos-card hr {
+    background-color: #D9DBE9;
+    margin-top: 12px;
+    height: 1px;
+    border: 0;
+}
+
+.uos-person-imgage-container {
+    width: 100%;
+    position: relative;
+}
+
+.uos-person-img {
+    border-radius: 20px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -20px;
+}
+
+.uos-person-img.img-one {
+    z-index: 3;
+    left: 0px;
+}
+
+.uos-person-img.img-two {
+    z-index: 2;
+    left: 10px;
+}
+
+.uos-person-img.img-three {
+    z-index: 1;
+    left: 20px;
+}
+
+.testimonial-section {
+    max-width: 1440px;
+    margin: auto;
+    padding: 80px 120px;
+}
+
+@media (max-width: 1210px) {
+
+    .about-heading h1 {
+        margin: 0px 180px;
+    }
+
+    .team-member-detail {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-left-content {
+        padding: 30px 60px 78px 94px;
+    }
+
+}
+
+@media (max-width: 945px) {
+
+    .about-heading h1 {
+        margin: 0px 50px;
+    }
+
+    .product-left-content {
+        padding: 30px 60px 78px 40px;
+    }
+
+}
+
 @media (max-width: 845px) {
+
+    .glimpse-container {
+        padding: 94px 100px;
+    }
+
     .glimpse-grid {
         flex-direction: column;
         align-items: center;
+    }
+
+    .glimpse-left-card {
+        width: auto;
     }
 
     .glimpse-right-card {
@@ -667,8 +909,226 @@ button {
         width: 100%;
     }
 
+    .glimpse-footer {
+        margin: 25px 0px;
+        padding: 44px 52px;
+        gap: 25px;
+    }
+    
+    .glimpse-footer h1 {
+        font-size: 2.2rem;
+    }
+    
+    .glimpse-footer h4 {
+        font-size: 1.4rem;
+    }
+
+    .about-section {
+        padding: 75px 75px 0px 75px;
+    }
+
+    .about-heading {
+        margin-bottom: 40px;
+    }
+
+    .about-team-member {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-left-content {
+        max-width: 100%;
+        align-items: center;
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .product-right-content {
+        max-width: 100%;
+        height: 350px;
+    }
+
+    .product-heading {
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+    }
+
+    .product-left-content h3 {
+        font-size: 2rem;
+        max-width: 650px;
+        text-align: center;
+    }
+    
+    .product-left-content h1 {
+        font-size: 3.6rem;
+        letter-spacing: 0.3rem;    
+    }
+
+    .product-left-content button {
+        margin-top: 10px;
+    }
+
+    .uos-header {
+        flex-direction: column;
+    }
+
+    .uos-header-content h1 {
+        font-size: 3.8rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .uos-arrows {
+        align-self: end;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .navbar-logo h1 {
+        display: none;
+    }
+
+    .about-section {
+        padding: 60px 60px 0px 60px;
+    }
+
     .about-heading h1 {
-        margin: 0px;
+        font-size: 3.8rem;
+        margin: 0px 40px;
+    }
+    
+    .about-content {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+    }
+
+    .product-left-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .product-left-content h1 {
+        font-size: 3.4rem;
+        letter-spacing: 0.2rem;    
+    }
+
+    .uos-header-content h1 {
+        font-size: 3.4rem;
+        letter-spacing: 0.2rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .glimpse-container {
+        padding: 54px 100px;
+    }
+
+    .glimpse-header {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .glimpse-footer {
+        margin: 20px 0px;
+        padding: 40px 48px;
+        gap: 20px;
+    }
+    
+    .glimpse-footer h1 {
+        font-size: 2rem;
+    }
+    
+    .glimpse-footer h4 {
+        font-size: 1.2rem;
+    }
+
+    .about-section {
+        padding: 50px 40px 0px 40px;
+    }
+
+    .about-heading h1 {
+        font-size: 3.6rem;
+        margin: 0px 30px;
+    }
+    
+    .about-content {
+        font-size: 1.7rem;
+        line-height: 3.3rem;
+        padding: 2rem 2rem;
+    }
+
+    .team-member-detail {
+        gap: 10px;
+    }
+
+    .team-member-loc {
+        padding: 12px 0px;
+    }
+
+    .team-member-bio {
+        font-size: 1.45rem;
+        line-height: 3.2rem;
+    }
+
+    .product-left-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    .product-left-content h1 {
+        font-size: 3.2rem;    
+    }
+
+    .uos-header-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .uos-header-content {
+        justify-content: center;
+    }
+
+    .uos-header-content span {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 33px 40px;
+    }
+
+    .glimpse-container {
+        padding: 40px 50px;
+    }
+
+    .glimpse-header {
+        font-size: 2.8rem;
+    }
+
+    .glimpse-footer {
+        padding: 32px 40px;
+        gap: 15px;
+    }
+ 
+    .about-section {
+        padding: 40px 20px 0px 20px;
+    }
+
+    .about-heading h1 {
+        font-size: 3.2rem;
+        margin: 0px 30px;
+    }
+    
+    .product-left-content h1 {
+        font-size: 3rem;    
     }
 
 }
