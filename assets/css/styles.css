@@ -1131,6 +1131,24 @@ button {
 }
 
 @media (max-width: 1320px) {
+
+    .school-section {
+        padding: 150px 40px;
+        gap: 50px;
+    }
+
+    .school-left-content {
+        padding: 2px 10px 2px 80px;
+    }
+
+    .school-right-content {
+        height: 475px;
+    }
+
+    .school-right-content img {
+        width: 580px;
+    }
+
     .uos-grid {
         flex-wrap: wrap;
         gap: 60px;
@@ -1138,6 +1156,11 @@ button {
 }
 
 @media (max-width: 1240px) {
+
+    .school-section {
+        gap: 45px;
+    }
+
     .footer-grid {
         gap: 100px;
     }
@@ -1150,8 +1173,38 @@ button {
 
 @media (max-width: 1210px) {
 
+    .school-section {
+        gap: 30px;
+    }
+
+    .school-right-content {
+        height: 440px;
+    }
+
+    .school-right-content img {
+        width: 540px;
+    }
+
+    .school-left-content {
+        max-width: 50%;
+    }
+
+    .school-right-content {
+        max-width: 50%;
+    }
+
+    .school-left-content h1 {
+        font-size: 3.8rem;
+    }
+
     .about-heading h1 {
         margin: 0px 180px;
+        font-size: 3.8rem;
+    }
+
+    .about-content {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
     }
 
     .team-member-detail {
@@ -1251,12 +1304,88 @@ button {
 
 }
 
+@media (max-width: 1120px) {
+
+    .school-section {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 120px 80px;
+    }
+
+    .school-left-content {
+        max-width: 100%;
+    }
+
+    .school-left-content {
+        padding: 2px 60px 2px 60px;
+    }
+
+    .school-right-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0px 60px;
+        background-color: #fff;
+    }
+
+    .school-right-content img {
+        width: 100% !important;
+    }
+
+}
+
 @media (max-width: 945px) {
+
+    .school-section {
+        padding: 100px 40px;
+    }
+    
+    .school-left-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .school-left-content p {
+        font-size: 2rem;
+        line-height: 3.4rem;
+    }
+
+    .about-team-member {
+        margin: 30px 0px;
+        padding: 30px;
+    }
 
     .about-heading h1 {
         margin: 0px 50px;
     }
 
+    .about-heading {
+        margin-bottom: 40px;
+    }
+
+    .about-content {
+        line-height: 3.7rem;
+        padding: 2rem 0rem;
+    }
+
+    .team-member-detail h2 {
+        font-size: 2.6rem;
+    }
+
+    .team-member-detail {
+        padding: 5px 0px;
+    }
+
+    .team-member-loc {
+        padding: 5px 0px;
+    }
+
+    .team-member-bio {
+        padding: 5px 0px;
+        line-height: 3.5rem;
+    }
+    
     .article-grid {
         gap: 20px;
     }
@@ -1402,7 +1531,7 @@ button {
 @media (max-width: 845px) {
 
     .glimpse-container {
-        padding: 94px 100px;
+        padding: 94px 80px;
     }
 
     .glimpse-grid {
@@ -1433,17 +1562,45 @@ button {
         font-size: 1.4rem;
     }
 
+    .school-section {
+        padding: 80px 40px;
+    }
+
+    .school-left-content {
+        padding: 2px 50px 2px 50px;
+    }
+
+    .school-right-content {
+        padding: 0px 50px;
+    }
+
     .about-section {
-        padding: 75px 75px 0px 75px;
+        padding: 75px 50px 0px 50px;
     }
 
     .about-heading {
         margin-bottom: 40px;
     }
 
+    .about-heading h1 {
+        font-size: 3.6rem;
+    }
+
     .about-team-member {
         flex-direction: column;
         justify-content: center;
+        gap: 20px;
+    }
+
+    .about-team-member-image {
+        width: 350px;
+        align-self: center;
+    }
+
+    .about-content {
+        line-height: 3.5rem;
+        padding: 0rem;
+        font-size: 1.6rem;
     }
 
     .product-section {
@@ -1569,18 +1726,46 @@ button {
         display: none;
     }
 
+    .glimpse-container {
+        padding: 80px 50px;
+    }
+
+    .school-left-content {
+        padding: 2px 20px 2px 20px;
+    }
+
+    .school-right-content {
+        padding: 0px 20px;
+    }
+
+    .school-left-content p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+
     .about-section {
         padding: 60px 60px 0px 60px;
     }
 
     .about-heading h1 {
-        font-size: 3.8rem;
-        margin: 0px 40px;
+        margin: 0px 20px;
     }
     
-    .about-content {
-        font-size: 1.8rem;
-        line-height: 3.5rem;
+    .about-heading {
+        margin-bottom: 30px;
+    }
+
+    .about-team-member {
+        gap: 15px;
+    }
+
+    .about-team-member {
+        margin: 20px 0px;
+        padding: 20px;
+    }
+
+    .about-team-member-image {
+        width: 280px;
     }
 
     .article-heading h1 {
@@ -1658,11 +1843,11 @@ button {
 @media (max-width: 600px) {
 
     .glimpse-container {
-        padding: 54px 100px;
+        padding: 54px 50px;
     }
 
     .glimpse-header {
-        font-size: 3rem;
+        font-size: 3.6rem;
         margin-bottom: 30px;
     }
 
@@ -1680,6 +1865,18 @@ button {
         font-size: 1.2rem;
     }
 
+    .school-section {
+        gap: 25px;
+    }
+
+    .school-left-content {
+        gap: 20px;
+    }    
+
+    .school-left-content h1 {
+        line-height: 4.4rem;
+    }
+
     .about-section {
         padding: 50px 40px 0px 40px;
     }
@@ -1687,20 +1884,12 @@ button {
     .about-heading h1 {
         font-size: 3.6rem;
         margin: 0px 30px;
+        line-height: 4.4rem;
     }
     
     .about-content {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 3.3rem;
-        padding: 2rem 2rem;
-    }
-
-    .team-member-detail {
-        gap: 10px;
-    }
-
-    .team-member-loc {
-        padding: 12px 0px;
     }
 
     .team-member-bio {
@@ -1789,11 +1978,7 @@ button {
     }
 
     .glimpse-container {
-        padding: 40px 50px;
-    }
-
-    .glimpse-header {
-        font-size: 2.8rem;
+        padding: 40px 20px;
     }
 
     .glimpse-footer {
@@ -1801,21 +1986,61 @@ button {
         gap: 15px;
     }
  
-    .about-section {
-        padding: 40px 20px 0px 20px;
+    .school-section {
+        padding: 80px 20px;
+    }
+
+    .school-left-content {
+        padding: 2px 0px 2px 0px;
+    }
+
+    .school-right-content {
+        padding: 0px 0px;
+    }
+
+    .school-left-content button {
+        width: auto;
+        font-size: 1.6rem;
     }
 
     .about-heading h1 {
         font-size: 3.2rem;
-        margin: 0px 30px;
+        line-height: 4.4rem;
+        margin: 0px;
+        overflow-wrap: break-word;
     }
     
+    .team-member-detail {
+        gap: 8px;
+    }
+
+    .article-section {
+        padding: 60px 20px 80px 20px;
+    }
+
     .article-text {
         width: 300px;
     }
 
     .article-image img {
         width: 300px;
+    }
+
+    .about-section {
+        padding: 50px 20px 0px 20px;
+    }
+
+    .about-team-member-image {
+        width: 200px;
+    }
+
+    .team-member-detail-right {
+        gap: 10px;
+    }
+
+    .team-member-detail-right button {
+        width: 40px;
+        height: 40px;
     }
 
     .product-left-content h1 {
