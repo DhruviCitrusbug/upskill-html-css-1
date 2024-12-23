@@ -351,7 +351,13 @@ button {
 .glimpse-person-detail {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 14px 0px 0px 0px;
+}
+
+.glimpse-person-text {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -591,7 +597,7 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     margin: 60px 0px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .article-card {
@@ -612,8 +618,8 @@ button {
     line-height: 3.2rem;
     text-align: center;
     color: #173B58;
-    padding: 0px 10px;
-    width: 400px;
+    padding: 0px 0px;
+    width: 380px;
 }
 
 .article-section button {
@@ -836,6 +842,10 @@ button {
 .uos-person-imgage-container {
     width: 100%;
     position: relative;
+}
+
+.glimpse-person-text.uos{
+    gap: 70px;
 }
 
 .uos-person-img {
@@ -1139,23 +1149,11 @@ button {
     }
 
     .footer-main {
-        gap: 400px;
-    }
-
-    .footer-grid {
         gap: 300px;
     }
 
-}
-
-@media (min-width: 4000px) {
-
-    .footer-main {
-        gap: 400px;
-    }
-
     .footer-grid {
-        gap: 500px;
+        gap: 250px;
     }
 
 }
@@ -1338,7 +1336,6 @@ button {
     }
     
     .testimonial-section h3 {
-        font-size: 1.5rem;
         padding: 0px 50px;
     }
 
@@ -1636,7 +1633,6 @@ button {
     }
 
     .testimonial-section h3 {
-        font-size: 1.4rem;
         padding: 0px 40px;
     }
 
@@ -1718,7 +1714,7 @@ button {
     }
 
     .testimonial-card {
-        max-width: 400px;
+        max-width: 100%;
         padding: 40px;
     }
 
@@ -1765,20 +1761,6 @@ button {
 
     .glimpse-container {
         padding: 94px 50px;
-    }
-
-    .glimpse-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .glimpse-left-card {
-        width: auto;
-    }
-
-    .glimpse-right-card {
-        height: 200px;
-        width: 100%;
     }
 
     .glimpse-footer {
@@ -1982,6 +1964,25 @@ button {
 
     .glimpse-container {
         padding: 80px 40px;
+    }
+
+    .glimpse-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .glimpse-left-card {
+        width: 100%;
+        padding: 30px 30px;
+    }
+
+    .english-learning-img {
+        width: 100%;
+    }
+
+    .glimpse-right-card {
+        height: 200px;
+        width: 100%;
     }
 
     .school-section {
@@ -2321,7 +2322,9 @@ button {
     /* 20px */
 
     .navbar {
-        padding: 20px 10px;
+        padding: 20px 10px 0px 10px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .navbar button {
