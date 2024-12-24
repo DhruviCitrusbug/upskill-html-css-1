@@ -594,10 +594,10 @@ button {
 
 .article-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 60px 0px;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .article-card {
@@ -606,10 +606,15 @@ button {
     align-items: center;
     gap: 16px;
     margin: 20px 0px;
+    width: 32%;
 }
 
 .article-image {
-    max-width: 100%;
+    width: 100%;
+}
+
+.article-image img {
+    width: 100%;
 }
 
 .article-text {
@@ -619,7 +624,7 @@ button {
     text-align: center;
     color: #173B58;
     padding: 0px 0px;
-    width: 380px;
+    max-width: 100%;
 }
 
 .article-section button {
@@ -1214,7 +1219,7 @@ button {
     .article-grid {
         flex-wrap: wrap;
         margin: 60px 0px 0px 0px;
-        gap: 60px;
+        /* gap: 60px; */
     }
 
     .article-section button {
@@ -1305,6 +1310,19 @@ button {
 
     .article-section {
         padding: 60px 80px 80px 80px;
+    }
+
+    .article-grid {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .article-card {
+        width: 48%;
+    }
+
+    .article-text {
+        font-size: 2.1rem;
     }
 
     .article-heading h1 {
@@ -1591,15 +1609,10 @@ button {
         padding: 5px 0px;
         line-height: 3.5rem;
     }
-    
-    .article-grid {
-        gap: 20px;
-    }
 
     .article-text {
         font-size: 2rem;
         line-height: 3rem;
-        width: 400px;
     }
 
     .product-left-content {
@@ -2027,6 +2040,14 @@ button {
         font-size: 3.6rem;
     }
 
+    .article-grid {
+        gap: 40px;
+    }
+
+    .article-card {
+        width: 100%;
+    }
+
     .product-left-content h3 {
         font-size: 1.8rem;
     }
@@ -2205,9 +2226,7 @@ button {
     }
 
     .article-text {
-        font-size: 1.8rem;
         line-height: 2.8rem;
-        width: 400px;
     }
 
     .product-left-content {
@@ -2412,14 +2431,6 @@ button {
         padding: 60px 20px 80px 20px;
     }
 
-    .article-text {
-        width: 300px;
-    }
-
-    .article-image img {
-        width: 300px;
-    }
-
     .about-section {
         padding: 50px 20px 0px 20px;
     }
@@ -2443,6 +2454,11 @@ button {
 
     .testimonial-section {
         padding: 40px 20px;
+    }
+
+    .uos-header {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .uos-section {
