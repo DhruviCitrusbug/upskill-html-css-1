@@ -811,20 +811,25 @@ button {
 
 .uos-grid {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
+.uos-content {
+    width: 100%;
+}
 
 .uos-card {
     background-color: #fff;
     border-radius: 10px;
-    width: auto;
+    width: 24%;
     padding: 14px 18px;
     color: #183C59;
     box-shadow: 0px 5px 6px 0px #080F340F;
 }
 
+.uos-card-img {
+    width: 100%;
+}
 
 .uos-card h1 {
     font-size: 1.8rem;
@@ -1002,11 +1007,19 @@ button {
 }
 
 .faq-card-active h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: 0.02rem;
     color: #183C59;
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-answer.faq-answer-active {
+    display: block;
 }
 
 .faq-answer p {
@@ -1034,6 +1047,7 @@ button {
 
 .faq-card-active button {
     background-color: #EDB031;
+    transform: rotate(270deg);
 }
 
 .footer-section {
@@ -1184,7 +1198,11 @@ button {
 
     .uos-grid {
         flex-wrap: wrap;
-        gap: 60px;
+        gap: 20px;
+    }
+
+    .uos-card {
+        width: 48%;
     }
 }
 
@@ -1365,10 +1383,6 @@ button {
     .testimonial-card {
         padding: 25px;
         gap: 30px;
-    }
-
-    .testimonial-detail p {
-        font-size: 1.4rem;
     }
 
     .faq-section {
@@ -1624,10 +1638,6 @@ button {
         line-height: 3.2rem;
     }
 
-    .uos-grid {
-        gap: 40px;
-    }
-
     .uos-header-content h1 {
         font-size: 3.6rem;
     }
@@ -1649,16 +1659,12 @@ button {
         padding: 0px 40px;
     }
 
-    .testimonial-detail h2 {
-        font-size: 1.4rem;
-    }
-
     .testimonial-detail h5 {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
     }
 
     .testimonial-detail p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 2.4rem;
     }
 
@@ -1727,16 +1733,10 @@ button {
     }
 
     .testimonial-card {
-        max-width: 100%;
-        padding: 40px;
-    }
-
-    .testimonial-detail h2 {
-        font-size: 1.6rem;
+        max-width: 48%;
     }
 
     .testimonial-detail p {
-        font-size: 1.4rem;
         line-height: 2.6rem;
     }
 
@@ -1783,11 +1783,11 @@ button {
     }
     
     .glimpse-footer h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
     
     .glimpse-footer h4 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .school-section {
@@ -1869,10 +1869,6 @@ button {
         gap: 60px;
     }
 
-    .uos-grid {
-        gap: 20px;
-    }
-
     .uos-header-content h1 {
         font-size: 3.6rem;
         letter-spacing: 0.3rem;
@@ -1905,11 +1901,12 @@ button {
     }
         
     .faq-card h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        width: 90%;
     }
 
     .faq-answer p {
-        font-size: 1.3rem;
+        font-size: 1.45rem;
     }
 
     .footer-main {
@@ -1987,6 +1984,10 @@ button {
     .glimpse-left-card {
         width: 100%;
         padding: 30px 30px;
+    }
+
+    .glimpse-footer {
+        padding: 36px 44px;
     }
 
     .english-learning-img {
@@ -2080,21 +2081,8 @@ button {
         padding: 0px 0px;
     }
 
-    .testimonial-detail h2 {
-        font-size: 1.4rem;
-    }
-
     .testimonial-detail p {
-        font-size: 1.3rem;
         line-height: 2.4rem;
-    }
-
-    .testimonial-detail h5 {
-        font-size: 1.2rem;
-    }
-
-    .testimonial-card {
-        padding: 30px;
     }
 
     .faq-section {
@@ -2125,6 +2113,10 @@ button {
     .float-card-one {
         left: 375px;
         top: 415px;
+    }
+
+    .uos-card {
+        width: 100%;
     }
 
 }
@@ -2173,16 +2165,16 @@ button {
 
     .glimpse-footer {
         margin: 20px 0px;
-        padding: 40px 48px;
+        padding: 30px 38px;
         gap: 20px;
     }
     
     .glimpse-footer h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     
     .glimpse-footer h4 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .school-section {
@@ -2261,7 +2253,8 @@ button {
     }
 
     .testimonial-card {
-        padding: 20px;
+        padding: 40px;
+        max-width: 100%;
         gap: 20px;
     }
 
@@ -2395,7 +2388,6 @@ button {
     }
 
     .glimpse-footer {
-        padding: 32px 40px;
         gap: 15px;
     }
  
@@ -2482,13 +2474,7 @@ button {
         padding: 0px 16px 0px 6px;
     }
 
-    .faq-card h3 {
-        font-size: 1.3rem;
-        width: 90%;
-    }
-
     .faq-answer p {
-        font-size: 1.25rem;
         line-height: 2.4rem;
     }
 
