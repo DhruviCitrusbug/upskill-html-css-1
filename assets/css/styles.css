@@ -23,13 +23,14 @@ button {
     box-shadow: 0px 0px 12px #173B584D;
     height: 6.1rem;
     font-size: 1.8rem;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 33px 96px;
+    padding: 33px 100px;
     height: auto;
     max-width: 1440px;
     margin: auto;
@@ -39,6 +40,11 @@ button {
     display: flex;
     align-items: center;
     gap: 0rem;
+}
+
+.navbar-logo img {
+    height: 60px;
+    width: auto;
 }
 
 .navbar-logo h1 {
@@ -58,13 +64,12 @@ button {
     justify-content: space-between;
     max-width: 1440px;
     margin: auto;
-    padding-bottom: 40px;
 }
 
 .hero-page-left-container {
     position: relative;
     color: #173B58;
-    padding: 137px 0px 137px 96px;
+    padding: 137px 0px 40px 100px;
     width: 50%;
 }
 
@@ -85,7 +90,7 @@ button {
 
 .hero-page-left-container h3 {
     font-size: 2.6rem;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .email-input-block {
@@ -98,10 +103,11 @@ button {
 .email-input-block input {
     color: #173B58;
     height: inherit;
-    width: inherit;
+    width: 100%;
     font-size: 1.8rem;
     font-weight: 600;
     padding-left: 2.6rem;
+    padding-right: 23.5rem;
     border: 1px solid #173B58;
     border-radius: 100px;
 }
@@ -126,7 +132,7 @@ button {
     color: #173B58;
     position: absolute;
     top: 0px;
-    right: -40px;
+    right: 0px;
     height: 62px;
     width: 229px;
     background-color: #EDB031;
@@ -177,7 +183,7 @@ button {
 .hero-page-right-container {
     width: 50%;
     max-width: 900px;
-    max-height: 684px;
+    max-height: 640px;
 }
 
 .hero-page-right-content {
@@ -1252,6 +1258,10 @@ button {
 
 /* 80px */
 
+    .navbar {
+        padding: 33px 80px;
+    }
+
     .email-input-block {
         height: 62px;
         width: 450px;
@@ -1263,12 +1273,12 @@ button {
     }
 
     .float-card-two {
-        top: 560px;
+        top: 518px;
         left: -65px;
     }
 
     .hero-page-left-container {
-        padding: 100px 0px 100px 96px;
+        padding: 100px 0px 100px 80px;
     }
     
     .hero-page-right-content {
@@ -1748,8 +1758,12 @@ button {
 
 /* 50px */
 
+    .navbar {
+        padding: 33px 50px;
+    }
+
     .hero-page-left-container {
-        padding: 80px;
+        padding: 80px 50px;
     }
 
     .hero-page-left-container h1 {
@@ -1897,7 +1911,11 @@ button {
         padding: 16px 20px;
         border: 1px solid #EBEBEB;
     }
-        
+
+    .faq-card-active {
+        border-left: 3px solid #EDB031;
+    }
+
     .faq-card h3 {
         font-size: 1.5rem;
         width: 90%;
@@ -1946,6 +1964,10 @@ button {
 
     .navbar {
         padding: 30px 40px;
+    }
+
+    .hero-page-left-container {
+        padding: 80px 40px;
     }
 
     .hero-page-container {
@@ -2122,7 +2144,7 @@ button {
 @media (max-width: 600px) {
 
     .navbar {
-        padding: 20px;
+        padding: 20px 40px;
     }
 
     .navbar-logo h1 {
@@ -2306,7 +2328,7 @@ button {
     }
 
     .float-card-one h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .float-card-one h2 {
@@ -2332,18 +2354,15 @@ button {
     /* 20px */
 
     .navbar {
-        padding: 20px 10px 0px 10px;
-        flex-direction: column;
-        gap: 20px;
+        padding: 20px 20px 0px 20px;
     }
 
     .navbar button {
-        width: 10.6rem;
-        height: 5rem;
+        width: 10rem;
+        height: 4rem;
     }
 
     .navbar-logo img {
-        width: 40px;
         height: 46px;
     }
 
@@ -2359,8 +2378,20 @@ button {
         padding: 60px 20px 60px 20px;
     }
 
+    .hero-page-left-container h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-page-left-container h1 img {
+        top: 42px;
+    }    
+
+    .hero-page-left-container h3 {
+        font-size: 2rem;
+    }
+
     .hero-page-right-content {
-        top: -30px;
+        top: -80px;
     }
 
     .email-input-block {
@@ -2374,15 +2405,30 @@ button {
     }
 
     .float-card-one {
-        display: none;
+        left: 270px;
+        top: 310px;
+        height: 70px;
+        width: 194px;
     }
 
     .float-card-two {
-        display: none;
+        top: 386px;
+        left: 64px;
+        padding: 8px;
+        width: 300px;
+        height: 125px;
+    }
+
+    .person-detail {
+        margin-top: 6px;
     }
 
     .glimpse-container {
         padding: 40px 20px;
+    }
+
+    .glimpse-header {
+        font-size: 3.2rem;
     }
 
     .glimpse-footer {
@@ -2421,6 +2467,10 @@ button {
         padding: 60px 20px 80px 20px;
     }
 
+    .article-heading h1 {
+        font-size: 3.2rem;
+    }
+
     .about-section {
         padding: 50px 20px 0px 20px;
     }
@@ -2438,12 +2488,12 @@ button {
         height: 40px;
     }
 
-    .product-left-content h1 {
-        font-size: 3.2rem;    
+    .school-left-content h1 {
+        font-size: 3.2rem;
     }
 
-    .testimonial-section {
-        padding: 40px 20px;
+    .product-left-content h1 {
+        font-size: 3.2rem;    
     }
 
     .uos-header {
@@ -2455,12 +2505,20 @@ button {
         padding: 60px 20px 80px 20px;
     }
 
+    .testimonial-section {
+        padding: 40px 20px;
+    }
+
+    .testimonial-section h1 {
+        font-size: 3.2rem;
+    }
+
     .faq-section {
         padding: 30px 20px 50px 20px;
     }
 
     .faq-section h1 {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
         line-height: 4rem;
     }
 
@@ -2474,11 +2532,36 @@ button {
 
     .faq-answer p {
         line-height: 2.4rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .float-card-one {
+        left: 250px;
+        top: 265px;
+        height: 88px;
+        width: 146px;
+    }
+
+    .float-card-two {
+        top: 360px;
+        height: 118px;
+    }
+
+    .person-detail {
+        margin-top: 3px;
     }
 
 }
 
 @media (max-width: 400px) {
+
+    .hero-page-right-container {
+        padding-bottom: 40px;
+    }
 
     .email-input-block {
         width: 250px;
@@ -2486,6 +2569,18 @@ button {
 
     .email-input-block button {
         width: 125px;
+    }
+
+    .float-card-one {
+        left: 220px;
+        top: 250px;
+        width: 140px;
+    }
+
+    .float-card-two {
+        top: 344px;
+        left: 50px;
+        height: 115px;
     }
 
 }
