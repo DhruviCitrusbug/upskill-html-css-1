@@ -85,12 +85,13 @@ button {
 .hero-page-left-container h1 img {
     position: absolute;
     left: 4px;
-    top: 50px;
+    top: 48px;
 }
 
 .hero-page-left-container h3 {
     font-size: 2.6rem;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .email-input-block {
@@ -161,8 +162,7 @@ button {
 }
 
 .sign-in-opt-btn button{
-    height: 62px;
-    width: 148px;
+    padding: 16px 32px;
     border-radius: 100px;
     border: none;
     align-items: center;
@@ -170,14 +170,22 @@ button {
     background-color: #EDF2F7;
 }
 
+/* .sign-in-opt-btn button {
+    padding: 16px 32px;
+} */
+
 .sign-in-logo-one {
-    height: 60%;
-    width: 60%;
+    height: 29px;
+    width: auto;
+    /* height: 60%;
+    width: 60%; */
 }
 
 .sign-in-logo-two {
-    height: 72%;
-    width: 72%;
+    height: 26px;
+    width: auto;
+    /* height: 72%;
+    width: 72%; */
 }
 
 .hero-page-right-container {
@@ -1063,13 +1071,13 @@ button {
 
 .footer-main {
     display: flex;
-    gap: 100px;
+    gap: 150px;
     padding: 40px 60px 0px 60px;
     justify-content: space-between;
 }
 
 .footer-heading {
-    width: 300px;
+    width: 25%;
 }
 
 .footer-heading h1 {
@@ -1077,12 +1085,13 @@ button {
     font-weight: 700;
     line-height: 4.8rem;
     color: #FFFFFF;
-    padding: 0px 20px 0px 0px;
 }
 
 .footer-grid {
+    width: 75%;
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .footer-card {
@@ -1171,14 +1180,6 @@ button {
         width: auto;
     }
 
-    .footer-main {
-        gap: 300px;
-    }
-
-    .footer-grid {
-        gap: 250px;
-    }
-
 }
 
 @media (max-width: 1320px) {
@@ -1216,10 +1217,6 @@ button {
         gap: 45px;
     }
 
-    .footer-grid {
-        gap: 100px;
-    }
-
     .testimonial-section {
         padding: 80px 100px;
     }
@@ -1241,7 +1238,6 @@ button {
     .article-grid {
         flex-wrap: wrap;
         margin: 60px 0px 0px 0px;
-        /* gap: 60px; */
     }
 
     .article-section button {
@@ -1405,17 +1401,9 @@ button {
         gap: 80px;
     }
 
-    .footer-grid {
-        gap: 60px;
-    }
-
     .footer-heading h1 {
         font-size: 3.8rem;
         line-height: 4.4rem;
-    }
-
-    .footer-content h2 {
-        font-size: 1.6rem;
     }
 
 }
@@ -1434,8 +1422,12 @@ button {
         width: 380px;
     }
 
+    .email-input-block input {
+        padding-right: 20.5rem;
+    }
+
     .email-input-block button {
-        width: 200px;
+        width: 180px;
     }
 
     .float-card-two {
@@ -1478,6 +1470,7 @@ button {
     .float-card-one {
         padding: 5px;
         left: 330px;
+        height: 90px;
     }
 
     .float-card-two {
@@ -1488,8 +1481,7 @@ button {
     }
 
     .sign-in-opt-btn button {
-        height: 50px;
-        width: 130px;
+        padding: 12px 20px;
     }
 
     .email-input-block {
@@ -1551,8 +1543,7 @@ button {
     }
 
     .sign-in-opt-btn button {
-        height: 62px;
-        width: 148px;
+        padding: 16px 32px;
     }
 
     .hero-page-left-container {
@@ -1582,6 +1573,10 @@ button {
 
     .email-input-block button {
         width: 229px;
+    }
+
+    .email-input-block input {
+        padding-right: 23.5rem;
     }
 
     .school-section {
@@ -1697,21 +1692,9 @@ button {
         gap: 60px;
     }
 
-    .footer-grid {
-        gap: 40px;
-    }
-
     .footer-heading h1 {
         font-size: 3.6rem;
         line-height: 4.2rem;
-    }
-
-    .footer-content h2 {
-        font-size: 1.4rem;
-    }
-
-    .footer-card h3 {
-        font-size: 1.6rem;
     }
 
     .footer-content {
@@ -1930,7 +1913,7 @@ button {
     }
 
     .footer-heading {
-        width: auto;
+        width: 100%;
         text-align: center;
     }
 
@@ -1939,8 +1922,9 @@ button {
     }
 
     .footer-grid {
-        justify-content: space-between;
-        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        gap: 80px;
     }
     
     .footer-logo {
@@ -1982,14 +1966,6 @@ button {
     .float-card-two {
         top: 580px;
         left: 110px;
-    }
-
-    .email-input-block {
-        width: 400px;
-    }
-
-    .email-input-block button {
-        width: 200px;
     }
 
     .glimpse-container {
@@ -2156,8 +2132,7 @@ button {
     }
 
     .sign-in-opt-btn button {
-        height: 50px;
-        width: 135px;
+        padding: 12px 20px;
     }
 
     .hero-page-right-content {
@@ -2339,19 +2314,16 @@ button {
         font-size: 1.6rem;
     }
 
-    .email-input-block {
-        width: 350px;
-    }
-
-    .email-input-block button {
-        width: 175px;
-    }
-
 }
 
 @media (max-width: 500px) {
 
     /* 20px */
+
+    .common-button {
+        height: 4.8rem;
+        font-size: 1.6rem;
+    }
 
     .navbar {
         padding: 20px 20px 0px 20px;
@@ -2379,15 +2351,19 @@ button {
     }
 
     .hero-page-left-container h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .hero-page-left-container h1 img {
-        top: 42px;
+        top: 36px;
     }    
 
     .hero-page-left-container h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .hero-page-left-container p {
+        font-size: 1.8rem;
     }
 
     .hero-page-right-content {
@@ -2395,13 +2371,22 @@ button {
     }
 
     .email-input-block {
-        width: 300px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        height: auto;
     }
 
     .email-input-block button {
-        width: 145px;
-        gap: 8px;
-        padding: 0px 8px;
+        width: 100%;
+        gap: 15px;
+        position: relative;
+    }
+
+    .email-input-block input {
+        height: 62px;
+        padding-right: 2.6rem;
     }
 
     .float-card-one {
@@ -2428,7 +2413,7 @@ button {
     }
 
     .glimpse-header {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .glimpse-footer {
@@ -2453,7 +2438,7 @@ button {
     }
 
     .about-heading h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         line-height: 4.4rem;
         margin: 0px;
         overflow-wrap: break-word;
@@ -2468,7 +2453,7 @@ button {
     }
 
     .article-heading h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .about-section {
@@ -2489,16 +2474,20 @@ button {
     }
 
     .school-left-content h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .product-left-content h1 {
-        font-size: 3.2rem;    
+        font-size: 3rem;    
     }
 
     .uos-header {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .uos-header-content h1 {
+        font-size: 3rem;
     }
 
     .uos-section {
@@ -2510,7 +2499,7 @@ button {
     }
 
     .testimonial-section h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .faq-section {
@@ -2518,7 +2507,7 @@ button {
     }
 
     .faq-section h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         line-height: 4rem;
     }
 
@@ -2533,6 +2522,10 @@ button {
     .faq-answer p {
         line-height: 2.4rem;
         font-size: 1.4rem;
+    }
+
+    .footer-content h2 {
+        font-size: 1.5rem;
     }
 
 }
@@ -2564,11 +2557,7 @@ button {
     }
 
     .email-input-block {
-        width: 250px;
-    }
-
-    .email-input-block button {
-        width: 125px;
+        width: 100%;
     }
 
     .float-card-one {
