@@ -1174,13 +1174,6 @@ button {
     max-width: 100%;
 }
 
-@media (min-width: 2000px) {
-
-    .footer-heading {
-        width: auto;
-    }
-
-}
 
 @media (max-width: 1320px) {
 
